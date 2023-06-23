@@ -200,7 +200,7 @@ Your Puppetfile has been generated. Copy and paste between the markers:
           print "    #{name} looks like a forge module.\n" if @options[:debug]
           puppetfile_contents[:modules].push(name)
         else
-          next if line =~ Forge_Regex
+          # next if line =~ Forge_Regex
           next if line =~ Blanks_Regex
           next if line =~ /#{Puppetfile_Header}/
           next if line =~ /#{Extras_Note}/
